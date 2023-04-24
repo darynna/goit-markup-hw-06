@@ -46,7 +46,7 @@ ul {
 
 }
 
-botton {
+button {
     cursor: pointer
 }
 
@@ -531,6 +531,10 @@ color: var(--hoover-color);
     width: 264px;
 }
 
+.social-medea-box{
+    margin-right: 80px;
+}
+
 .footer-icons-list {
     display: flex;
     gap: 16px;
@@ -585,8 +589,11 @@ color: var(--hoover-color);
 }
 
 
-
-
+.subscribe-tite{
+margin-bottom: 16px;
+color: var(--primary-bakground-color);
+font-weight: 500;
+}
 
 
 
@@ -802,5 +809,39 @@ color: var(--hoover-color);
 }
 
 
+/**
+  |============================
+  | forma
+  |============================
+*/
 
+.footer-input{
+width: 264px;   
+padding: 8px 16px;
+background-color: transparent;
+border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
+.footer-input::placeholder{
+    color: var(--primary-bakground-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sudmit-button-footer{
+    margin-left: 24px;
+    padding: 8px 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #4D5AE5;
+    border-radius: 4px;
+    border-color: transparent;
+    border: none;
+    color: var(--primary-bakground-color);
+}
 
