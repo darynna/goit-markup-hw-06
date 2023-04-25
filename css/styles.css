@@ -13,6 +13,8 @@
     --transition-duration: 250ms;
 }
 
+
+
 body {
     background-color: #fff;
     color: var(--primary-text-colour);
@@ -808,6 +810,76 @@ font-weight: 500;
     color: var(--primary-bakground-color);
 }
 
+.modal-text{
+margin-top: 24px;
+
+width: 360px;
+text-align: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+
+.modal-label{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+color: #8E8F99;
+margin-bottom: 4px;
+}
+
+.input{
+    width: 360px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+margin-bottom: 8px;
+}
+
+.input-personal-details{
+    padding: 8px 16px;
+}
+
+.input-textarea{
+    resize: none;
+    width: 360px;
+    height: 120px;
+}
+
+.input-textarea::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
+}
+
+.modal-sudmit-button{
+align-self:center;    
+padding: 16px 32px;
+width: 169px;
+
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+color: var(--primary-bakground-color);
+
+transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-sudmit-button:hover,
+.modal-sudmit-button:focus{
+    background-color: var(--hoover-color);
+
+}
 
 /**
   |============================
@@ -835,6 +907,11 @@ border-radius: 4px;
     margin-left: 24px;
     padding: 8px 24px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -843,5 +920,17 @@ border-radius: 4px;
     border-color: transparent;
     border: none;
     color: var(--primary-bakground-color);
+
+    transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.sudmit-button-footer:hover,
+.sudmit-button-footer:focus{
+    background-color: var(--hoover-color);
+}
+
+.form-flex{
+    display: flex;
+}
+
 
