@@ -793,7 +793,8 @@ font-weight: 500;
     cursor: pointer;
     
     border-radius: 50%;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
 
     color: black;
 
@@ -837,21 +838,43 @@ margin-bottom: 4px;
 }
 
 .input{
-    width: 360px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 4px;
+width: 360px;
+height: 40px;
 margin-bottom: 8px;
+padding-left: 38px;
+
+border: none;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+outline: none;
 }
 
-.input-personal-details{
-    padding: 8px 16px;
+.form-element input:focus {
+border: 1px solid #4D5AE5;
+}
+
+.form-element input:focus + svg{
+    fill: var(--accent-colour);
 }
 
 .input-textarea{
     resize: none;
     width: 360px;
     height: 120px;
+    width: 360px;
+    margin-bottom: 16px;
+    
+    border: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: none;
 }
+
+
+.form-element input:focus+svg {
+    fill: var(--accent-colour);
+}
+
 
 .input-textarea::placeholder{
     font-weight: 400;
@@ -859,6 +882,14 @@ margin-bottom: 8px;
     line-height: 1.16;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
+}
+
+.form-element textarea:focus {
+    border: 1px solid var(--accent-colour);
+}
+
+.form-element textarea:focus::placeholder {
+    color: var(--accent-colour);
 }
 
 .modal-sudmit-button{
@@ -879,6 +910,20 @@ transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2
 .modal-sudmit-button:focus{
     background-color: var(--hoover-color);
 
+}
+
+
+
+.input-wrap {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 45%;
+    left: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 /**
@@ -932,5 +977,9 @@ border-radius: 4px;
 .form-flex{
     display: flex;
 }
+
+
+
+
 
 
