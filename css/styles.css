@@ -955,6 +955,8 @@ transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2
 
 .modal-form-agreement-box{
     appearance: none;
+    -moz-appearance: none;
+        -webkit-appearance: none;
 
 }
 
