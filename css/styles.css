@@ -844,6 +844,7 @@ line-height: 24px;
 }
 
 .modal-label{
+display: block;
 margin-bottom: 4px;
 font-weight: 400;
 font-size: 12px;
@@ -875,6 +876,8 @@ transition: outline var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .input-textarea{
+    display: block;
+
     resize: none;
     width: 360px;
     height: 120px;
@@ -1069,4 +1072,8 @@ border-radius: 4px;
 
 input, select, textarea {
     color: var(--secondary-background-color);
+}
+
+.input, select, textarea{
+    color: var(--title-text-colour);
 }
